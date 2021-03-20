@@ -12,15 +12,18 @@
 
 ActiveRecord::Schema.define(version: 2021_03_20_153842) do
 
+  # These are extensions that must be enabled in order to support this database
+  enable_extension "plpgsql"
+
   create_table "tokens", force: :cascade do |t|
-    t.string "eth_address"
-    t.string "opensea_url"
-    t.string "foundation_url"
-    t.string "artist_name"
-    t.string "artist_portfolio_link"
-    t.string "tools_used"
-    t.string "resolution"
-    t.string "file_size"
+    t.text "eth_address"
+    t.text "opensea_url"
+    t.text "foundation_url"
+    t.text "artist_name"
+    t.text "artist_portfolio_link"
+    t.text "tools_used"
+    t.text "resolution"
+    t.text "file_size"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end
