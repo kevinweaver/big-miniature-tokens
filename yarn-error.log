@@ -1,0 +1,48 @@
+Arguments: 
+  /usr/local/Cellar/node/15.2.1/bin/node /usr/local/Cellar/yarn/1.22.10/libexec/bin/yarn.js build
+
+PATH: 
+  /Users/carmenweaver/opt/anaconda3/bin:/Users/carmenweaver/.rbenv/shims:/Users/carmenweaver/.rbenv/bin:/usr/local/opt/ruby/bin:/Users/carmenweaver/.yarn/bin:/Users/carmenweaver/.config/yarn/global/node_modules/.bin:/usr/local/opt/postgresql@9.6/bin:/usr/local/opt/elasticsearch@5.6/bin:/Users/carmenweaver/.rbenv/shims:/Users/carmenweaver/.rbenv/bin:/Users/carmenweaver/.rbenv/shims:/usr/local/bin:/usr/local/sbin:~/bin:/usr/local/opt/postgresql@9.6/bin:/Users/carmenweaver/bin:/usr/local/bin:/Users/carmenweaver/.node/bin:/usr/local/share/npm/bin:/usr/local/heroku/bin:/usr/local/opt/elasticsearch@5.6/bin:/Users/carmenweaver/.rbenv/shims:/Users/carmenweaver/.rbenv/bin:/Users/carmenweaver/.rbenv/shims:/usr/local/bin:/usr/local/sbin:~/bin:/usr/local/opt/postgresql@9.6/bin:/Users/carmenweaver/bin:/usr/local/bin:/Users/carmenweaver/.node/bin:/usr/local/share/npm/bin:/usr/local/heroku/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/sbin:/opt:/usr/local/sbin:/opt
+
+Yarn version: 
+  1.22.10
+
+Node version: 
+  15.2.1
+
+Platform: 
+  darwin x64
+
+Trace: 
+  SyntaxError: /Users/carmenweaver/code/big-miniature-tokens/package.json: Unexpected token } in JSON at position 493
+      at JSON.parse (<anonymous>)
+      at /usr/local/Cellar/yarn/1.22.10/libexec/lib/cli.js:1625:59
+      at Generator.next (<anonymous>)
+      at step (/usr/local/Cellar/yarn/1.22.10/libexec/lib/cli.js:310:30)
+      at /usr/local/Cellar/yarn/1.22.10/libexec/lib/cli.js:321:13
+
+npm manifest: 
+  {
+    "name": "big-miniature-tokens",
+    "version": "1.0.0",
+    "description": "This README would normally document whatever steps are necessary to get the application up and running.",
+    "main": "index.js",
+    "directories": {
+      "lib": "lib"
+    },
+    "scripts": {
+      "test": "echo \"Error: no test specified\" && exit 1",
+      "start": "cd client && yarn start",
+      "build": "cd client && yarn build",
+      "install": "cd client && yarn"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
