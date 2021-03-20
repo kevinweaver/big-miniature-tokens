@@ -1,11 +1,12 @@
 class Api::V1::TokensController < ApplicationController
   def show
-    Token.find_by(artist_name: artist_name_params)
+    art_token = Token.find_by(artist_name: artist_name_params)
+    render json: { token: art_token }
   end
 
   private
 
   def artist_name_params
-    params.permit(:artist_name)
+    params.fetch(:artist_name)
   end
 end
