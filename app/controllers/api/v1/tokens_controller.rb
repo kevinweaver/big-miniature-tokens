@@ -1,4 +1,4 @@
-class TokensController < ApplicationController
+class Api::V1::TokensController < ApplicationController
   def show
     Token.find_by(artist_name: artist_name_params)
   end
