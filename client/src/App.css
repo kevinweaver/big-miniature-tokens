@@ -1,38 +1,83 @@
-.App {
-  text-align: center;
+body, html {
+  height: 100%;
+  margin: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
+.background {
+  display: flex;
+  background-image: url("./images/background.jpg");
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+  .art-image {
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.art-header {
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.info-container {
+  width: 700px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  align-content: space-around;
+  margin: 0 auto;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.collectors-edition {
+  color: white;
+  margin-bottom: 50px;
+}
+
+.gif {
+  background-image: url("./images/showcase.gif");
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+}
+
+.artist-message-title {
+  font-size: 1.2rem;
+  color: white;
+  margin-bottom: 10px;
+}
+
+.artist-message {
+  font-size: 1rem;
+  color: white;
+  margin-bottom: 50px;
+}
+
+.nft-message-title {
+  font-size: 1.2rem;
+  color: white;
+  margin-bottom: 10px;
+}
+
+.nft-owner-message {
+  color: white;
+  margin-bottom: 30px;
+}
+
+.qr-message-title {
+  font-size: 1.2rem;
+  color: white;
+  margin-bottom: 10px;
+}
+
+.qr-message {
+  color: white;
+  margin-bottom: 30px;
 }
