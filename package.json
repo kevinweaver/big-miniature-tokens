@@ -16,6 +16,8 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "ethers": "^5.0.32"
+    "ethers": "^5.0.32",
+    "ganache": "^6.4.4",
+    "ganache-cli": "^6.12.2"
   }
 }
