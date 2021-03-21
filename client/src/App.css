@@ -32,31 +32,32 @@ body, html {
 }
 
 .info-container {
-  width: 700px;
+  min-width: 300px;
+  width: 80%;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   align-content: space-around;
-  margin: 0 auto;
+  margin: 0 10%;
 }
 
 .content{
-  background: #2B2B2B
-  
+  background: #2B2B2B;
+}
+
+.content-container{
 }
 
 .collectors-edition {
   color: white;
+  background: #c13847;
   margin-bottom: 50px;
 }
 
 .wip {
-  background-image: url("./images/showcase.gif");
   display: block;
   position: relative;
   width: 100%;
-  height: 100%;
-  background-repeat: no-repeat;
 }
 
 .artist-message-title {
