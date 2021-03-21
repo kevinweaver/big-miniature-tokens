@@ -1,34 +1,45 @@
-import React, { Component } from 'react'
+import React, { useState } from 'react'
+import ReactModal from 'react-modal'
 import ReactPlayer from 'react-player'
-import axios from 'axios'
-
+import Button from 'react-bootstrap/Button'
+import Form from 'react-bootstrap/Form'
+import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
 
-class ArtPage extends Component {
-  constructor(props) {
-    super(props)
-    this.state = {
-      token: []
-    }
-  }
+function OwnerModal({handleClose, show}) {
+  return(
+    <ReactModal
+      isOpen={show}
+      onRequestClose={handleClose}
+      className="modal"
+    >
+      <div className="form">
+        <Form.Group controlId="exampleForm.ControlTextarea1">
+          <Form.Label>
+            NFT Message:
+            <input type="text" name="name" />
+          </Form.Label>
+          <input type="submit" value="Submit" onClick={handleClose}/>
+          <Form.Control as="textarea" rows={3} />
+        </Form.Group>
+      </div>
+    </ReactModal>
+  )
+}
+function ArtPage() {
 
   //https://ipfs.io/ipfs/QmNi8aGhTgSAxVCK7sLB9qHdVAyASkhJPn5FsouVKWYVjP/metadata.json
 
-  getToken() {
-    axios.get('/api/v1/tokens?artist_name=brogli')
-      .then(response => {
-        this.setState({token: response.data})
-        console.log("axios", response.data.token)
-      })
-      .catch(error => console.log(error))
-  }
+  const [showModal, setShowModal] = useState(false);
 
-  componentDidMount() {
-  }
-
-  //<ReactPlayer className="nft" url='https://www.youtube.com/watch?v=-O4fK477a8I' playing={true} loop={true} muted={true}/>
-  render() {
-    return (
+  return (
+    <div>
+      <Button
+        className="owner-butt"
+        onClick={() => {setShowModal(true)} }
+      >
+        I am the owner
+      </Button>
       <div>
         <div className="background">
           <div className="nft-wrapper">
@@ -44,6 +55,7 @@ class ArtPage extends Component {
               <h2 className="collectors-edition">
                 Collector's Edition 1/1 NFT
               </h2>
+              <OwnerModal handleClose={() => setShowModal(false)} show={showModal} />
               <img className="wip" src={"./showcase.gif"} alt="showcase"/>
               <h2 className="artist-message-title">Artist Message</h2>
               <div className="artist-message">
@@ -62,8 +74,8 @@ class ArtPage extends Component {
           </div>
         </div>
       </div>
-    )
-  }
+    </div>
+  )
 }
 
 const fetchArtistInfo = function () {
