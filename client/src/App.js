@@ -26,6 +26,7 @@ class ArtPage extends Component {
   componentDidMount() {
   }
 
+  //<ReactPlayer className="nft" url='https://www.youtube.com/watch?v=-O4fK477a8I' playing={true} loop={true} muted={true}/>
   render() {
     return (
       <div>
@@ -33,8 +34,6 @@ class ArtPage extends Component {
           <div className="nft-wrapper">
             <ReactPlayer className="nft" url='./cthulhu.mp4' playing={true} loop={true} muted={true}/>}
             
-            {//<ReactPlayer className="nft" url='https://www.youtube.com/watch?v=-O4fK477a8I' playing={true} loop={true} muted={true}/>
-            }
           </div>
         </div>
         <div className="content">
