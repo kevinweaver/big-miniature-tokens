@@ -17,6 +17,7 @@
     "install": "cd client && yarn"
   },
   "keywords": [],
-  "author": "",
-  "license": "ISC"
+  "author": "Kevin Weaver <kevinweaver2@gmail.com>",
+  "license": "ISC",
+  "repository": "git@github.com:kevinweaver/big-miniature-tokens.git"
 }
