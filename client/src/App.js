@@ -30,9 +30,10 @@ function OwnerModal({handleClose, show}) {
       <div className="form">
         <Form.Group controlId="exampleForm.ControlTextarea1">
           <Form.Label>
-            NFT Message:
+            Update NFT Owner Message:
           </Form.Label>
           <Form.Control as="textarea" rows={3} />
+          <br/>
           <Button type="submit" value="Submit" onClick={handleClose}>Submit</Button>
         </Form.Group>
       </div>
