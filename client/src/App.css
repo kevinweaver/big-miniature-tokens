@@ -1,6 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Della+Respira&family=Roboto:wght@300&display=swap');
+
 body, html {
   height: 100%;
   margin: 0;
+  color: white;
+}
+
+a {
+  color: #5ACAEE;
+
+}
+
+h1 {
+  font-size: 4em;
+  font-family: 'Della Respira', serif;
+}
+
+
+h2 {
+  font-size: 2em;
+  font-family: 'Della Respira', serif;
+}
+
+p{
+  font-family: 'Roboto', sans-serif;
+  line-height: 1.5em;
+  font-size: 1em;
 }
 
 .owner-butt {
@@ -46,6 +71,7 @@ body, html {
   margin: 100px auto 0;
   display: block;
   position: relative;
+  filter: drop-shadow(0px 0px 6px #5ACAEE);
 }
 
 .nft {
@@ -54,6 +80,10 @@ body, html {
 
 .art-header {
   color: white;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0.5em;
 }
 
 .info-container {
@@ -75,30 +105,34 @@ body, html {
 
 .collectors-edition {
   color: white;
-  background: #c13847;
-  margin-bottom: 50px;
-}
-
-.wip {
-  display: block;
-  position: relative;
-  width: 100%;
+  background: #5ACAEE;
+  padding: 5px;
+  border-radius: 2px;
+  margin: 0 auto;
 }
 
 .artist-message-title {
-  font-size: 1.2rem;
   color: white;
   margin-bottom: 10px;
 }
 
 .artist-message {
-  font-size: 1rem;
   color: white;
   margin-bottom: 50px;
+  margin-right: 10%;
+}
+
+.artist-progress {
+  display: block;
+  width: 100%;
+}
+
+
+.artist-container {
+  display: flex;
 }
 
 .nft-message-title {
-  font-size: 1.2rem;
   color: white;
   margin-bottom: 10px;
 }
@@ -109,7 +143,6 @@ body, html {
 }
 
 .qr-message-title {
-  font-size: 1.2rem;
   color: white;
   margin-bottom: 10px;
 }
@@ -117,4 +150,30 @@ body, html {
 .qr-message {
   color: white;
   margin-bottom: 30px;
+}
+		
+div.gallery {
+  display: flex; 
+  margin-bottom: 2em;
+}
+
+div.gallery-item {
+  margin: 5px;
+  border: 1px solid #ccc;
+  float: left;
+  width: 180px;
+}
+
+div.gallery:hover {
+  border: 1px solid #00eaff;
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
 }
