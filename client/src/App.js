@@ -32,8 +32,7 @@ class ArtPage extends Component {
       <div>
         <div className="background">
           <div className="nft-wrapper">
-            <ReactPlayer className="nft" url='./cthulhu.mp4' playing={true} loop={true} muted={true}/>}
-            
+            <ReactPlayer className="nft" url='./cthulhu.mp4' playing={true} loop={true} muted={true}/>
           </div>
         </div>
         <div className="content">
