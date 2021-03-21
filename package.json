@@ -7,7 +7,8 @@
     "lib": "lib"
   },
   "engines": {
-    "node": "14.x"
+    "node": "14.x",
+    "yarn": "1.x"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -16,6 +17,7 @@
     "install": "cd client && yarn"
   },
   "keywords": [],
-  "author": "",
-  "license": "ISC"
+  "author": "Kevin Weaver <kevinweaver2@gmail.com>",
+  "license": "ISC",
+  "repository": "git@github.com:kevinweaver/big-miniature-tokens.git"
 }
